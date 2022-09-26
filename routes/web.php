@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\AlbaController;
+use App\Http\Controllers\DepartController;
+use App\Http\Controllers\PredioController;
+use App\Http\Controllers\SuperController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +34,17 @@ Route::middleware([
 
 Route::group([
     'prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'can:admin'
+], function (){
+    Route::name('dashboard-admin')->get('dashboard', [UserController::class, 'admin']);
+    Route::resource('albas', AlbaController::class);
+    Route::resource('predios', PredioController::class);
+    Route::resource('supers', SuperController::class);
+    Route::resource('departs', DepartController::class);
+    Route::resource('users', UserController::class);
+});
+
+Route::group([
+    'prefix' => 'pesq', 'as' => 'pesq.', 'middleware' => 'can:pesq'
 ], function (){
 
 });

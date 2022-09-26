@@ -42,13 +42,14 @@
                     <x-jet-input-error for="cadastro"></x-jet-input-error>
                 </div>
 
+                <!--
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Lotação') }}" />
 
                     <x-jet-input class="{{ $errors->has('depart') ? 'is-invalid' : '' }}" type="text" name="depart"
                                  :value="old('depart')" required />
                     <x-jet-input-error for="depart"></x-jet-input-error>
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                     <x-jet-label value="{{ __('Password') }}" />

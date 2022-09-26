@@ -167,7 +167,7 @@ return [
          */
 
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
-        Bootstrapper\BootstrapperL5ServiceProvider::class,
+        //Bootstrapper\BootstrapperL5ServiceProvider::class,
         Kris\LaravelFormBuilder\FormBuilderServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,

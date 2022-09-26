@@ -12,8 +12,18 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav me-auto">
                 <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" class="font-branc">
-                    {{ __('Teste') }}
+                    {{ __('Portal') }}
                 </x-jet-nav-link>
+                @if(Auth::user()->role == 2)
+                <x-jet-nav-link href="{{ route('admin.dashboard-admin') }}" :active="request()->routeIs('admin.dashboard-admin')" class="font-branc">
+                    {{ __('Admin') }}
+                </x-jet-nav-link>
+                @endif
+                @if(Auth::user()->role == 2 || Auth::user()->role == 3)
+                    <x-jet-nav-link href="#" :active="request()->routeIs('#')" class="font-branc">
+                        {{ __('Pesquisa') }}
+                    </x-jet-nav-link>
+                @endif
             </ul>
 
             <!-- Right Side Of Navbar -->

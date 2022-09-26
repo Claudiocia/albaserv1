@@ -8,7 +8,7 @@
                     </div>
 
                     <h3 class="h3 my-4">
-                        Welcome to your Jetstream application!
+                        Você está Logado
                     </h3>
 
                     <div class="text-muted">

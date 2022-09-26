@@ -9,12 +9,27 @@ class UserForm extends Form
     public function buildForm()
     {
         $this
-            ->add('name', 'text')
-            ->add('cpf', 'text')
-            ->add('email', 'text')
-            ->add('cadastro', 'text')
-            ->add('depart', 'text')
-            ->add('password', 'text')
-            ->add('role', 'text');
+            ->add('name', 'text', [
+                'label' => 'Nome',
+                'label_attr' => ['class' => 'control-label required'],
+                'attr' => ['oninput' => 'handleInput(event)', 'required' => 'required'],
+            ])->add('email', 'email', [
+                'label' => 'E-mail',
+                'label_attr' => ['class' => 'control-label required'],
+                'attr' => ['required' => 'required', 'id' => 'email'],
+            ], $modify = true)
+            ->add('cpf', 'text', [
+                'label' => 'CPF',
+                'label_attr' => ['class' => 'control-label required'],
+                'attr' => ['required' => 'required', 'id' => 'cpf'],
+            ])
+            ->add('cadastro', 'text', [
+                'label' => 'Cadastro',
+                'label_attr' => ['class' => 'control-label required'],
+                'attr' => ['required' => 'required'],
+            ])
+            ->add('depart', 'text', [
+                'label' => 'Departamento'
+            ]);
     }
 }
