@@ -24,7 +24,6 @@ class CreateUsersTable extends Migration
             $table->string('cadastro')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->smallInteger('role')->default(1);
             $table->rememberToken();
             $table->unsignedBigInteger('depart_id')->nullable();
             $table->foreign('depart_id')->references('id')->on('departs');

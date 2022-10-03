@@ -15,6 +15,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $roles[] = array(
+            array(
+                'system' => 'Admin'
+            ),
+            array(
+                'system' => 'Pesq'
+            ),
+            array(
+                'system' => 'Const'
+            )
+        );
+
+        foreach ($roles as $role) {
+            DB::table('roles')->insert($role);
+        }
+
         $userAdmin[] = array(
             array(
             'name' => 'Claudio Souza',
@@ -23,13 +39,13 @@ class DatabaseSeeder extends Seeder
             'cadastro' => '925294',
             'email_verified_at' => now(),
             'password' => bcrypt('91316445'),
-            'role' => User::USER_ADMIN,
             'depart_id' => null,
-            ),
+            )
         );
 
         foreach ($userAdmin as $user) {
             DB::table('users')->insert($user);
+            DB::table('role_user')->insert(['role_id' => 1, 'user_id' => 1]);
         }
 
         $albas[] = array(

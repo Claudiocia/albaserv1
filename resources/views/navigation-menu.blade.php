@@ -14,16 +14,18 @@
                 <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" class="font-branc">
                     {{ __('Portal') }}
                 </x-jet-nav-link>
-                @if(Auth::user()->role == 2)
+                @foreach(Auth::user()->roles as $role)
+                @if($role->system == 'Admin')
                 <x-jet-nav-link href="{{ route('admin.dashboard-admin') }}" :active="request()->routeIs('admin.dashboard-admin')" class="font-branc">
                     {{ __('Admin') }}
                 </x-jet-nav-link>
                 @endif
-                @if(Auth::user()->role == 2 || Auth::user()->role == 3)
-                    <x-jet-nav-link href="#" :active="request()->routeIs('#')" class="font-branc">
+                @if($role->system == 'Admin' || $role->system == 'Pesq')
+                    <x-jet-nav-link href="{{route('pesq.dashboard-pesq')}}" :active="request()->routeIs('pesq.dashboard-pesq')" class="font-branc">
                         {{ __('Pesquisa') }}
                     </x-jet-nav-link>
                 @endif
+                @endforeach
             </ul>
 
             <!-- Right Side Of Navbar -->

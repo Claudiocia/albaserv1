@@ -28,6 +28,9 @@ class UserForm extends Form
                 'label_attr' => ['class' => 'control-label required'],
                 'attr' => ['required' => 'required'],
             ])
+            ->add('role', 'hidden', [
+                'value' => false,
+            ])
             ->add('depart', 'text', [
                 'label' => 'Departamento'
             ]);

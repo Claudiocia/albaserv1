@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use Bootstrapper\Interfaces\TableInterface;
+use Eloquent;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 use Prettus\Repository\Contracts\Transformable;
 use Prettus\Repository\Traits\TransformableTrait;
 
@@ -26,8 +28,8 @@ use Prettus\Repository\Traits\TransformableTrait;
  * @property string $url
  * @property string|null $email
  * @property string $tag
- * @property \Illuminate\Support\Carbon|null $created_at
- * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  * @method static \Illuminate\Database\Eloquent\Builder|Alba newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Alba newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Alba query()
@@ -48,7 +50,7 @@ use Prettus\Repository\Traits\TransformableTrait;
  * @method static \Illuminate\Database\Eloquent\Builder|Alba whereUf($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Alba whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Alba whereUrl($value)
- * @mixin \Eloquent
+ * @mixin Eloquent
  */
 class Alba extends Model implements Transformable, TableInterface
 {

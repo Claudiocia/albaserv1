@@ -35,12 +35,12 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h4>Contato</h4>
                     <p>
-                        Rua Território do Amapá, 455 <br>
-                        Salvador, BA 41.830-540<br>
-                        Brasil <br>
-                        <strong>Telefone:</strong> +55 (71) 999 578 916<br>
-                        <strong>Whatsapp:</strong> +55 (71) 999 578 916<br>
-                        <strong>Email:</strong> assoc.exalcms@gmail.com<br>
+                        Palácio Dep. Luis Eduardo Magalhães <br>
+                        1ª Avenida, 130, CAB, <br>
+                        CEP: 41.745-001, <br>
+                        Salvador - Bahia. <br>
+                        <strong>Telefone:</strong> +55 (71) 3015 7268<br>
+                        <strong>Email:</strong> nucleodetransparencia@alba.ba.gov.br<br>
                     </p>
 
                     <div class="social-links">
@@ -73,10 +73,10 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong>Marketmix</strong>. Todos os direitos reservados
+            &copy; Copyright <strong>ASCOM/ALBA</strong>. Todos os direitos reservados
         </div>
         <div class="credits">
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="#">ASCOM</a>
         </div>
     </div>
 </footer><!-- End Footer -->

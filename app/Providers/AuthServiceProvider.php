@@ -27,14 +27,23 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         Gate::define('admin', function ($user){
-            return $user->role == User::USER_ADMIN;
+            foreach ($user->roles as $role){
+                if ($role->system == 'Admin' ){
+                    //dd($role->system);
+                    return true;
+                }else {
+                    return false;
+                }
+            }
         });
 
         Gate::define('pesq', function ($user){
-            if ($user->role == User::USER_PESQ || $user->role == User::USER_ADMIN){
-                return true;
-            }else {
-                return route('login');
+            foreach ($user->roles as $role){
+                if ($role->system == 'Admin' || $role->system == 'Pesq' ){
+                    return true;
+                }else {
+                    return route('/login');
+                }
             }
         });
 

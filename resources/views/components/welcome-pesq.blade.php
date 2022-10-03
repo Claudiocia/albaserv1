@@ -3,32 +3,32 @@
         <div class="card shadow bg-light">
             <div class="card-body bg-blue px-5 py-3 border-bottom rounded-top">
                 <div class="mx-3 my-3">
-                    <div>
-                        <x-jet-application-logo style="width: 217px;" />
-                    </div>
-
                     <h3 class="h3 my-4 font-branc">
-                        Bem vindo ao Admin
+                        Bem vindo a Pesquisa
                     </h3>
-                    <ul class="navbar-nav align-items-baseline">
-                        <x-jet-dropdown id="settingsDropdown"  class="font-branc">
-                            <x-slot name="trigger">
-                                {{__('Menu de Adm.')}}
-                                <svg class="ms-2" width="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l3 3a1 1 0 01-1.414 1.414L10 5.414 7.707 7.707a1 1 0 01-1.414-1.414l3-3A1 1 0 0110 3zm-3.707 9.293a1 1 0 011.414 0L10 14.586l2.293-2.293a1 1 0 011.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                </svg>
-                            </x-slot>
-                            <x-slot name="content">
-                                <x-jet-dropdown-link href="{{ route('admin.users.index') }}">
-                                    {{ __('Usuários') }}
-                                </x-jet-dropdown-link>
-                                <x-jet-dropdown-link href="{{ route('admin.roles.index') }}">
-                                    {{ __('Roles') }}
-                                </x-jet-dropdown-link>
-                            </x-slot>
-                        </x-jet-dropdown>
-                    </ul>
                 </div>
+                <!-- inserção do menu Pesquisa -->
+
+                <nav class="navbar navbar-expand-md navbar-light bg-blue border-bottom sticky-top">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <!-- Left Side Of Navbar -->
+                            <ul class="navbar-nav me-auto">
+                                <x-jet-nav-link href="{{ route('pesq.dashboard-pesq') }}" :active="request()->routeIs('pesq.dashboard-pesq')" class="font-branc">
+                                    {{ __('Home Pesquisa') }}
+                                </x-jet-nav-link>
+                                <x-jet-nav-link href="{{ route('pesq.albas.index') }}" :active="request()->routeIs('pesq.albas.index')" class="font-branc">
+                                    {{ __('Assembleias') }}
+                                </x-jet-nav-link>
+                                <x-jet-nav-link href="#" :active="request()->routeIs('#')" class="font-branc">
+                                    {{ __('Outro') }}
+                                </x-jet-nav-link>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- FIM do menu Pesquisa -->
             </div>
             <div class="row g-0">
                 <div class="col-md-6 pe-0">
@@ -124,4 +124,3 @@
         </div>
     </div>
 </div>
-

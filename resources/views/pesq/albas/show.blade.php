@@ -15,15 +15,15 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row btn-new-reset">
-                                    {!! Button::primary('Voltar')->asLinkTo(route('admin.albas.index')) !!}
-                                    {!! Button::primary('Editar')->asLinkTo(route('admin.albas.edit', ['alba' => $alba->id]))->addClass(['class' => 'btn-teste']) !!}
+                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.albas.index')) !!}
+                                    {!! Button::primary('Editar')->asLinkTo(route('pesq.albas.edit', ['alba' => $alba->id]))->addClass(['class' => 'btn-teste']) !!}
                                     {!! Button::danger('Delete')
-                                            ->asLinkTo(route('admin.albas.destroy', ['alba' => $alba->id]))
+                                            ->asLinkTo(route('pesq.albas.destroy', ['alba' => $alba->id]))
                                             ->addAttributes(['onclick' => 'event.preventDefault();document.getElementById("form-delete").submit();', 'class' => 'btn-teste'])
                                  !!}
                                     <?php $formDelete = FormBuilder::plain([
                                         'id' => 'form-delete',
-                                        'route' => ['admin.albas.destroy', 'alba' => $alba->id],
+                                        'route' => ['pesq.albas.destroy', 'alba' => $alba->id],
                                         'method' => 'DELETE',
                                         'style' => 'display:none',
                                     ]); ?>

@@ -4,15 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Forms\AlbaForm;
 use App\Models\Alba;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class AlbaController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return View
      */
     public function index(Request  $request)
     {
@@ -22,29 +24,29 @@ class AlbaController extends Controller
         }else{
             $albas = Alba::where('tag', 'LIKE','%'.$search.'%')->paginate();
         }
-        return view('admin.albas.index', compact('albas'));
+        return view('pesq.albas.index', compact('albas'));
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return View
      */
     public function create()
     {
         $form = \FormBuilder::create(AlbaForm::class, [
-            'url' => route('admin.albas.store'),
+            'url' => route('pesq.albas.store'),
             'method' => 'POST'
         ]);
 
-        return view('admin.albas.create', compact('form'));
+        return view('pesq.albas.create', compact('form'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return RedirectResponse
      */
     public function store(Request $request)
     {
@@ -74,43 +76,43 @@ class AlbaController extends Controller
             .$data['bairro'].' '.$data['email'].' '.$data['url'].' '.$data['presid'];
         Alba::create($data);
         $request->session()->flash('msg', 'Assembleia Criada com sucesso');
-        return redirect()->route('admin.albas.index');
+        return redirect()->route('pesq.albas.index');
     }
 
     /**
      * Display the specified resource.
      *
      * @param  Alba $alba
-     * @return \Illuminate\Http\Response
+     * @return View
      */
     public function show(Alba $alba)
     {
-        return view('admin.albas.show', compact('alba'));
+        return view('pesq.albas.show', compact('alba'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
      * @param  Alba $alba
-     * @return \Illuminate\Http\Response
+     * @return View
      */
     public function edit(Alba $alba)
     {
         $form = \FormBuilder::create(AlbaForm::class, [
-            'url' => route('admin.albas.update', ['alba' => $alba->id]),
+            'url' => route('pesq.albas.update', ['alba' => $alba->id]),
             'method' => 'PUT',
             'model' => $alba,
         ]);
 
-        return view('admin.albas.edit', compact('form', 'alba'));
+        return view('pesq.albas.edit', compact('form', 'alba'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  Alba $alba
-     * @return \Illuminate\Http\Response
+     * @return RedirectResponse
      */
     public function update(Request $request, Alba $alba)
     {
@@ -139,20 +141,20 @@ class AlbaController extends Controller
         $alba->save();
 
         $request->session()->flash('msg', 'Cadastro Alterado com sucesso');
-        return redirect()->route('admin.albas.index');
+        return redirect()->route('pesq.albas.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  Alba $alba
-     * @return \Illuminate\Http\Response
+     * @return RedirectResponse
      */
     public function destroy(Request  $request, Alba $alba)
     {
         $alba->delete();
         $request->session()->flash('msg', 'Assembleia deletada com sucesso.');
-        return redirect()->route('admin.albas.index');
+        return redirect()->route('pesq.albas.index');
     }
 }

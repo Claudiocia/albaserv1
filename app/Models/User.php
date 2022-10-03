@@ -63,6 +63,8 @@ use Prettus\Repository\Traits\TransformableTrait;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereTwoFactorSecret($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Role[] $roles
+ * @property-read int|null $roles_count
  */
 class User extends Authenticatable implements Transformable, TableInterface
 {
@@ -73,9 +75,6 @@ class User extends Authenticatable implements Transformable, TableInterface
     use Notifiable;
     use TwoFactorAuthenticatable;
 
-    const USER_PUBLIC = 1;
-    const USER_ADMIN = 2;
-    const USER_PESQ = 3;
 
     /**
      * The attributes that are mass assignable.
@@ -88,7 +87,6 @@ class User extends Authenticatable implements Transformable, TableInterface
         'email',
         'cadastro',
         'password',
-        'role',
         'depart_id'
     ];
 
@@ -125,6 +123,11 @@ class User extends Authenticatable implements Transformable, TableInterface
     public function depart()
     {
         return $this->belongsTo(Depart::class, 'depart_id', 'id');
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
     }
 
     public function getTableHeaders()

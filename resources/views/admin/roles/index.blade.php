@@ -13,7 +13,7 @@
                             <div class="panel-heading-admin">
                                 <h5>Assembleia Legislativa</h5>
                                 <div class="form-search">
-                                    <form action="{{ route('admin.albas.index') }}" method="get">
+                                    <form action="{{ route('admin.roles.index') }}" method="get">
                                         <label class="label-search">Pesquisar</label>
                                         <x-jet-input id="search" class="mt-1 w-full" type="search" name="search"/>
                                         <div class="buton-search">
@@ -26,15 +26,15 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row btn-new-reset">
-                                    {!! Button::primary('Novo')->asLinkTo(route('admin.albas.create')) !!}
-                                    {!! Button::primary('Limpar')->asLinkTo(route('admin.albas.index'))->addClass(['class' => 'btn-teste']) !!}
+                                    {!! Button::primary('Novo')->asLinkTo(route('admin.roles.create')) !!}
+                                    {!! Button::primary('Limpar')->asLinkTo(route('admin.roles.index'))->addClass(['class' => 'btn-teste']) !!}
                                 </div>
                                 <div class="row" style="margin-left: 10px; margin-right: 10px;">
                                     {!!
-                                        Table::withContents($albas)->striped()
-                                        ->callback('Actions', function ($field, $alba){
-                                            $linkEdit = route('admin.albas.edit', ['alba' => $alba->id]);
-                                            $linkShow = route('admin.albas.show', ['alba' => $alba->id]);
+                                        Table::withContents($roles)->striped()
+                                        ->callback('Actions', function ($field, $role){
+                                            $linkEdit = route('admin.roles.edit', ['role' => $role->id]);
+                                            $linkShow = route('admin.roles.show', ['role' => $role->id]);
                                             return \Bootstrapper\Facades\Button::LINK('<i class="fas fa-pencil-alt"></i>')->asLinkTo($linkEdit)." | ".
                                             \Bootstrapper\Facades\Button::LINK('<i class="fas fa-eye"></i>')->asLinkTo($linkShow);
                                         })
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </div>
-                        {{ $albas->links() }}
+                        {{ $roles->links() }}
                     </div>
                 </div>
             </div>
