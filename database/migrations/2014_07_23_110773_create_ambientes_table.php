@@ -16,8 +16,12 @@ class CreateAmbientesTable extends Migration
 	public function up()
 	{
 		Schema::create('ambientes', function(Blueprint $table) {
-            $table->increments('id');
-
+            $table->id();
+            $table->string('nome');
+            $table->string('num')->nullable();
+            $table->string('tipo');
+            $table->bigInteger('andar_id')->unsigned();
+            $table->foreign('andar_id')->references('id')->on('andars');
             $table->timestamps();
 		});
 	}

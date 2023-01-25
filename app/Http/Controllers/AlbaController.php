@@ -144,7 +144,7 @@ class AlbaController extends Controller
         return redirect()->route('pesq.albas.index');
     }
 
-    /**
+    /**pr
      * Remove the specified resource from storage.
      *
      * @param Request $request

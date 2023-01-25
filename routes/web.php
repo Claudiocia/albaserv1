@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AlaController;
 use App\Http\Controllers\AlbaController;
+use App\Http\Controllers\AmbienteController;
+use App\Http\Controllers\AndarController;
 use App\Http\Controllers\DepartController;
 use App\Http\Controllers\PredioController;
 use App\Http\Controllers\RoleController;
@@ -48,7 +51,13 @@ Route::group([
     Route::name('dashboard-pesq')->get('dashboard', [UserController::class, 'pesq']);
     Route::resource('albas', AlbaController::class);
     Route::resource('predios', PredioController::class);
+    Route::resource('alas', AlaController::class);
+    Route::resource('andars', AndarController::class);
+    Route::resource('ambientes', AmbienteController::class);
     Route::resource('supers', SuperController::class);
     Route::resource('departs', DepartController::class);
+
+    Route::get('get-alas/{idPredio}', [AmbienteController::class, 'getAlas']);
+    Route::get('get-andars/{idAla}', [AmbienteController::class, 'getAndars']);
 
 });

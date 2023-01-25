@@ -24,6 +24,10 @@ use Prettus\Repository\Traits\TransformableTrait;
  * @method static \Illuminate\Database\Eloquent\Builder|Predio whereNome($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Predio whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property int $alba_id
+ * @method static \Illuminate\Database\Eloquent\Builder|Predio whereAlbaId($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Ala[] $alas
+ * @property-read int|null $alas_count
  */
 class Predio extends Model implements Transformable, TableInterface
 {
@@ -39,6 +43,11 @@ class Predio extends Model implements Transformable, TableInterface
     public function alba()
     {
         return $this->belongsTo(Alba::class);
+    }
+
+    public function alas()
+    {
+        return $this->hasMany(Ala::class);
     }
 
     public function getTableHeaders()

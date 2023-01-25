@@ -50,6 +50,7 @@ class DatabaseSeeder extends Seeder
 
         $albas[] = array(
             array(
+                'id' => 1,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'UNIÃO NACIONAL DOS LEGISLATIVOS ESTADUAIS',
                 'sigla' => 'UNALE',
@@ -66,6 +67,7 @@ class DatabaseSeeder extends Seeder
                 'tag' => 'UNIÃO NACIONAL DOS LEGISLATIVOS ESTADUAIS UNALE Lídio Lopes Brasília DF',
             ),
             array(
+                'id' => 2,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO ACRE',
                 'sigla' => 'ALEAC',
@@ -82,6 +84,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO ACRE ALEAC Nicolau Júnior Rio Branco AC',
             ),
             array(
+                'id' => 3,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE ALAGOAS',
                 'sigla' => 'AL/AL',
@@ -98,6 +101,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE ALAGOAS AL/AL Marcelo Victor Maceió AL',
             ),
             array(
+                'id' => 4,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO AMAZONAS',
                 'sigla' => 'ALEAM',
@@ -114,6 +118,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO AMAZONAS ALEAM Roberto Maia Cidade Filho Manaus AM',
             ),
             array(
+                'id' => 5,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO AMAPÁ',
                 'sigla' => 'AL/AP',
@@ -130,6 +135,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO AMAPÁ AL/AP Kaká Barbosa Macapá AP',
             ),
             array(
+                'id' => 6,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DA BAHIA',
                 'sigla' => 'ALBA',
@@ -146,6 +152,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DA BAHIA ALBA Adolfo Menezes Salvador BA',
             ),
             array(
+                'id' => 7,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO CEARÁ',
                 'sigla' => 'AL/CE',
@@ -162,6 +169,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO CEARÁ AL/CE Evandro Leitão Fortaleza CE',
             ),
             array(
+                'id' => 8,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO ESPÍRITO SANTO',
                 'sigla' => 'AL/ES',
@@ -178,6 +186,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO ESPÍRITO SANTO AL/ES Erick Cabral Musso Vitória ES',
             ),
             array(
+                'id' => 9,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE GOIÁS',
                 'sigla' => 'AL/GO',
@@ -194,6 +203,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE GOIÁS AL/GO Lissauer Vieira Goiânia GO',
             ),
             array(
+                'id' => 10,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO MARANHÃO',
                 'sigla' => 'AL/MA',
@@ -210,6 +220,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO MARANHÃO AL/MA Othelino Neto São Luís MA',
             ),
             array(
+                'id' => 11,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE MINAS GERAIS',
                 'sigla' => 'ALMG',
@@ -226,6 +237,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE MINAS GERAIS ALMG Agostinho Célio Andrade Patrus Belo Horizonte MG',
             ),
             array(
+                'id' => 12,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO MATO GROSSO',
                 'sigla' => 'AL/MT',
@@ -242,6 +254,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO MATO GROSSO AL/MT Eduardo Botelho Cuiabá MT',
             ),
             array(
+                'id' => 13,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO MATO GROSSO DO SUL',
                 'sigla' => 'AL/MS',
@@ -258,6 +271,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO MATO GROSSO DO SUL AL/MS Paulo Corrêa Campo Grande MS',
             ),
             array(
+                'id' => 14,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO PARÁ',
                 'sigla' => 'ALEPA',
@@ -274,6 +288,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO PARÁ ALEPA Francisco Melo (Chicão) Belém PA',
             ),
             array(
+                'id' => 15,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DA PARAÍBA',
                 'sigla' => 'AL/PB',
@@ -290,6 +305,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DA PARAÍBA AL/PB Adriano César Galdino de Araújo João Pessoa PB',
             ),
             array(
+                'id' => 16,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE PERNAMBUCO',
                 'sigla' => 'ALEPE',
@@ -306,6 +322,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE PERNAMBUCO ALEPE Eriberto Medeiros Recife PE',
             ),
             array(
+                'id' => 17,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO PIAUÍ',
                 'sigla' => 'ALEPI',
@@ -322,6 +339,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO PIAUÍ ALEPI Themistócles de Sampaio Pereira Filho Teresina PI',
             ),
             array(
+                'id' => 18,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO PARANÁ',
                 'sigla' => 'ALEP',
@@ -338,6 +356,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO PARANÁ ALEP Ademar Luiz Traiano Curitiba PR',
             ),
             array(
+                'id' => 19,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO RIO DE JANEIRO',
                 'sigla' => 'ALERJ',
@@ -354,6 +373,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO RIO DE JANEIRO ALERJ André Luiz Ceciliano Rio de Janeiro RJ',
             ),
             array(
+                'id' => 20,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO NORTE',
                 'sigla' => 'AL/RN',
@@ -370,6 +390,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO NORTE AL/RN Ezequiel Ferreira de Souza Natal RN',
             ),
             array(
+                'id' => 21,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE RONDÔNIA',
                 'sigla' => 'ALE/RO',
@@ -386,6 +407,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE RONDÔNIA ALE/RO Alex Mendonça Alves Porto Velho RO',
             ),
             array(
+                'id' => 22,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE RORAIMA',
                 'sigla' => 'AL/RR',
@@ -402,6 +424,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE RORAIMA AL/RR Jalser Renier Padilha Boa Vista RR',
             ),
             array(
+                'id' => 23,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL',
                 'sigla' => 'AL/RS',
@@ -418,6 +441,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL AL/RS Valdeci Oliveira Porto Alegre RS',
             ),
             array(
+                'id' => 24,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE SANTA CATARINA',
                 'sigla' => 'ALESC',
@@ -434,6 +458,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE SANTA CATARINA ALESC Moaci Sopelsa Florianópolis SC',
             ),
             array(
+                'id' => 25,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE SERGIPE',
                 'sigla' => 'AL/SE',
@@ -450,6 +475,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE SERGIPE AL/SE Luciano Bispo de Lima Aracaju SE',
             ),
             array(
+                'id' => 26,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE SÃO PAULO',
                 'sigla' => 'AL/SP',
@@ -466,6 +492,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE SÃO PAULO AL/SP Carlos Pignatari São Paulo SP',
             ),
             array(
+                'id' => 27,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'ASSEMBLEIA LEGISLATIVA DO ESTADO DE TOCANTINS',
                 'sigla' => 'AL/TO',
@@ -482,6 +509,7 @@ class DatabaseSeeder extends Seeder
                 'tag' =>  'ASSEMBLEIA LEGISLATIVA DO ESTADO DE TOCANTINS AL/TO Antônio Andrade Palmas TO',
             ),
             array(
+                'id' => 28,
                 'chave' => 'ASSEMBLEIAS LEGISLATIVAS DO BRASIL',
                 'nome' => 'CÂMARA LEGISLATIVA DO DISTRITO FEDERAL',
                 'sigla' => 'CL/DF',
@@ -501,5 +529,392 @@ class DatabaseSeeder extends Seeder
         foreach ($albas as $alba){
             DB::table('albas')->insert($alba);
         }
+
+        $predios[] = array(
+            array(
+                'nome' => 'Palácio Dep. Luis Eduardo Magalhães',
+                'alba_id' => 6,
+            ),
+            array(
+                'nome' => 'Edificio Senador Jutahy Magalhães',
+                'alba_id' => 6,
+            ),
+            array(
+                'nome' => 'Edificio Nelson David Ribeiro',
+                'alba_id' => 6,
+            ),
+            array(
+                'nome' => 'Edificio Wilson Lins',
+                'alba_id' => 6,
+            ),
+        );
+
+        foreach ($predios as $predio){
+            DB::table('predios')->insert($predio);
+        }
+
+        $alas[] = array(
+            array(
+                'nome' => 'ALA A',
+                'predio_id' => 1,
+            ),
+            array(
+                'nome' => 'ALA B',
+                'predio_id' => 1,
+            ),
+            array(
+                'nome' => 'Única',
+                'predio_id' => 2,
+            ),
+            array(
+                'nome' => 'Única',
+                'predio_id' => 3,
+            ),
+            array(
+                'nome' => 'Única',
+                'predio_id' => 4,
+            ),
+        );
+
+        foreach ($alas as $ala){
+            DB::table('alas')->insert($ala);
+        }
+
+        $andars[] = array(
+            array(
+                'nome' => '1º Andar',
+                'ala_id' => 1,
+            ),
+            array(
+                'nome' => '2º Andar',
+                'ala_id' => 1,
+            ),
+            array(
+                'nome' => '3º Andar',
+                'ala_id' => 1,
+            ),
+            array(
+                'nome' => '1º Subsolo',
+                'ala_id' => 1,
+            ),
+            array(
+                'nome' => '2º Subsolo',
+                'ala_id' => 1,
+            ),
+            array(
+                'nome' => 'Térreo',
+                'ala_id' => 1,
+            ),
+            array(
+                'nome' => '1º Andar',
+                'ala_id' => 2,
+            ),
+            array(
+                'nome' => '2º Andar',
+                'ala_id' => 2,
+            ),
+            array(
+                'nome' => '3º Andar',
+                'ala_id' => 2,
+            ),
+            array(
+                'nome' => '1º Subsolo',
+                'ala_id' => 2,
+            ),
+            array(
+                'nome' => '2º Subsolo',
+                'ala_id' => 2,
+            ),
+            array(
+                'nome' => 'Térreo',
+                'ala_id' => 2,
+            ),
+            array(
+                'nome' => '1º Andar',
+                'ala_id' => 3,
+            ),
+            array(
+                'nome' => '2º Andar',
+                'ala_id' => 3,
+            ),
+            array(
+                'nome' => '3º Andar',
+                'ala_id' => 3,
+            ),
+            array(
+                'nome' => 'Térreo',
+                'ala_id' => 3,
+            ),
+
+            array(
+                'nome' => '1º Andar',
+                'ala_id' => 4,
+            ),
+            array(
+                'nome' => '2º Andar',
+                'ala_id' => 4,
+            ),
+            array(
+                'nome' => '3º Andar',
+                'ala_id' => 4,
+            ),
+            array(
+                'nome' => 'Térreo',
+                'ala_id' => 4,
+            ),
+            array(
+                'nome' => '1º Andar',
+                'ala_id' => 5,
+            ),
+            array(
+                'nome' => '2º Andar',
+                'ala_id' => 5,
+            ),
+            array(
+                'nome' => '3º Andar',
+                'ala_id' => 5,
+            ),
+            array(
+                'nome' => 'Térreo',
+                'ala_id' => 5,
+            ),
+        );
+
+        foreach ($andars as $andar){
+            DB::table('andars')->insert($andar);
+        }
+
+        $ambientes[] = array(
+            array(
+                'nome' => 'Departamento de Apoio Administrativo',
+                'num' => 's/n',
+                'tipo' => 'Administrativo',
+                'andar_id' => 5
+            ),
+            array(
+                'nome' => 'Coordenação de Protocolo',
+                'num' => 's/n',
+                'tipo' => 'Administrativo',
+                'andar_id' => 5
+            ),
+            array(
+                'nome' => 'Central Telefônica',
+                'num' => 's/n',
+                'tipo' => 'Administrativo',
+                'andar_id' => 5
+            ),
+            array(
+                'nome' => 'Área Técnica',
+                'num' => 's/n',
+                'tipo' => 'Administrativo',
+                'andar_id' => 5
+            ),
+            array(
+                'nome' => 'Subestação Elétrica',
+                'num' => 's/n',
+                'tipo' => 'Administrativo',
+                'andar_id' => 5
+            ),
+            array('nome' => 'Coordenação de Arquivo Geral', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 5),
+            array('nome' => 'Departamento de Engenharia e Projetos', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Coordenação de Artes Gráficas', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Departamento de Material e Patrimonio', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Coordenação de Aquisição', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Departamento de Serviços Auxiliares', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Coordenação de Patrimônio', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Depósito', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Sanitário Feminino', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Copa', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 11),
+            array('nome' => 'Comitê de Imprensa', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Diretoria Legislativa', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Plenário Deputado Orlando Spínola', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Tribuna de Imprensa', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Área Técnica', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Departamento de Taquigrafia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Departamento de Controle de Processo Legislativo', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Coordenação de Registro', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Sanitário Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 4),
+            array('nome' => 'Secretaria Geral das Comissões', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Bradesco - Posto Avançado', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Salas das Comissões', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Coordenação de Expediente', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Departamento de Atos Oficiais', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Secretaria Geral da Mesa', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Sala do Cafezinho do Plenário', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Saguão Nestor Duarte', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Galeria Ex-Presidentes', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Superintendencia de Assuntos Parlamentares', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 10),
+            array('nome' => 'Diretoria de Tecnologia de Informação', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 6),
+            array('nome' => 'Plenarinho', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 6),
+            array('nome' => 'Galerias do Plenário', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 6),
+            array('nome' => 'Rampa de acesso', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 6),
+            array('nome' => 'Assessoria de Imprensa da Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 6),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 6),
+            array('nome' => 'Sanitário Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 6),
+            array('nome' => 'Assistência Civil da Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 12),
+            array('nome' => 'Coordenação de Sonorização', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 12),
+            array('nome' => 'Departamento de Apoio Técnico', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 12),
+            array('nome' => 'Sanitário Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 12),
+            array('nome' => 'Sanitário Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 12),
+            array('nome' => 'Chefia de Gabinete da Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Protocolo Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Relações Institucionais - Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Assessoria Especial Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Segurança Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Superintendencia de Administração e Finanças', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 1),
+            array('nome' => 'Assistência Militar', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 1),
+            array('nome' => 'Salão Nobre', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Galeria Ex-Deputadas', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Cerimonial', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Copa Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 7),
+            array('nome' => 'Assessoria de Meio Ambiente', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Bancada Feminina', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Grupo Editorial', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Corregedoria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Ouvidoria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Procuradoria Parlamentar', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 2),
+            array('nome' => 'Assessoria de Planejamento', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 8),
+            array('nome' => 'Diretoria Administrativa', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 8),
+            array('nome' => 'Auditoria', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 8),
+            array('nome' => 'Departamento de Pesquisa', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 8),
+            array('nome' => 'Circuito Interno de TV', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 8),
+            array('nome' => 'Departamento de Contratos e Convenios', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 8),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 8),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 8),
+            array('nome' => 'Superintendencia de Recursos Humanos', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 3),
+            array('nome' => 'Admissão e Posse', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 3),
+            array('nome' => 'Diretoria de Economia e Finanças', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 3),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 3),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 3),
+            array('nome' => 'Procuradoria Geral', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 9),
+            array('nome' => 'Coordenação de Arquivo e Microfilmagem', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 9),
+            array('nome' => 'Associação dos ex-Deputados - ASSED', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 9),
+            array('nome' => 'União dos Vereadores da Bahia - UVB', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 9),
+            array('nome' => 'União dos Vices-Prefeitos da Bahia - UVPB', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 9),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 9),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 9),
+            array('nome' => 'Coordenação de Segurança', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Assembleia de Carinho', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Comunicação Social', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Memorial do Legislativo', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 16),
+            array('nome' => 'Liderança', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Biblioteca', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 16),
+            array('nome' => 'Sanitário Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Area Técnica', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 16),
+            array('nome' => 'Auditório Jornalista Jorge Calmon', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 13),
+            array('nome' => 'Fundação Paulo Jackson', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 13),
+            array('nome' => 'TV e Rádio ALBA', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 13),
+            array('nome' => 'Sanitario Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 13),
+            array('nome' => 'Sanitario Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 13),
+            array('nome' => '1ª Vice-Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '2ª Vice-Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '3ª Vice-Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '4ª Vice-Presidencia', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '1ª Secretaria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '2ª Secretaria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '3ª Secretaria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => '4ª Secretaria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => 'Escola do Legislativo', 'num' => 's/n', 'tipo' => 'Administrativo', 'andar_id' => 14),
+            array('nome' => 'Sanitário Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => 'Sanitário Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 14),
+            array('nome' => 'Liderança da Maioria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 15),
+            array('nome' => 'Liderança da Minoria', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 15),
+            array('nome' => 'Lideranças Partidárias', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 15),
+            array('nome' => 'Sanitário Masculino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 15),
+            array('nome' => 'Sanitário Feminino', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 15),
+            array('nome' => 'Banco Bradesco', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 20),
+            array('nome' => 'Refeitório', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 20),
+            array('nome' => 'Restaurante A La Carte', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 20),
+            array('nome' => 'Lanchonete Assalba', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 20),
+            array('nome' => 'Salão de Beleza Assalba', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 20),
+            array('nome' => 'Caixa Parlamentar', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 20),
+            array('nome' => 'Bradesco Prime', 'num' => 's/n', 'tipo' => 'Serviços', 'andar_id' => 20),
+            array('nome' => 'Gabinete ', 'num' => '101', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '102', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '103', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '104', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '105', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '106', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '107', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '108', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '109', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '110', 'tipo' => 'Gabinete', 'andar_id' => 17),
+            array('nome' => 'Gabinete ', 'num' => '201', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '202', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '203', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '204', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '205', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '206', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '207', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '208', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '209', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '210', 'tipo' => 'Gabinete', 'andar_id' => 18),
+            array('nome' => 'Gabinete ', 'num' => '301', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '302', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '303', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '304', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '305', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '306', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '307', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '308', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '309', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Gabinete ', 'num' => '310', 'tipo' => 'Gabinete', 'andar_id' => 19),
+            array('nome' => 'Correios', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 24),
+            array('nome' => 'Corpo da Guarda', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 24),
+            array('nome' => 'Serviço Social', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 24),
+            array('nome' => 'Serviço Médico', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 24),
+            array('nome' => 'Almoxarifado', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 24),
+            array('nome' => 'Setor de Transporte', 'num' => 's/n', 'tipo' => 'Operacional', 'andar_id' => 24),
+            array('nome' => 'Gabinete ', 'num' => '101', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '102', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '103', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '104', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '105', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '106', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '107', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '108', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '109', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '110', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '111', 'tipo' => 'Gabinete', 'andar_id' => 21),
+            array('nome' => 'Gabinete ', 'num' => '201', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '202', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '203', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '204', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '205', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '206', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '207', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '208', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '209', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '210', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '211', 'tipo' => 'Gabinete', 'andar_id' => 22),
+            array('nome' => 'Gabinete ', 'num' => '301', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '302', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '303', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '304', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '305', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '306', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '307', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '308', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '309', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '310', 'tipo' => 'Gabinete', 'andar_id' => 23),
+            array('nome' => 'Gabinete ', 'num' => '311', 'tipo' => 'Gabinete', 'andar_id' => 23),
+        );
+
+        foreach ($ambientes as $ambiente){
+            DB::table('ambientes')->insert($ambiente);
+        }
+
     }
 }

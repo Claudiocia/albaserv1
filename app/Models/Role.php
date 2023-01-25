@@ -26,6 +26,11 @@ use Prettus\Repository\Traits\TransformableTrait;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\User[] $users
  * @property-read int|null $users_count
+ * @property \Illuminate\Support\Carbon|null $deleted_at
+ * @method static \Illuminate\Database\Query\Builder|Role onlyTrashed()
+ * @method static \Illuminate\Database\Eloquent\Builder|Role whereDeletedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|Role withTrashed()
+ * @method static \Illuminate\Database\Query\Builder|Role withoutTrashed()
  */
 class Role extends Model implements Transformable, TableInterface
 {

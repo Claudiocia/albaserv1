@@ -46,6 +46,9 @@
 }
 .btn-teste{
     margin-top: 8px!important;
+    width: 180px;
+    color: white;
+    font-weight: bold;
 }
 
 .form-admin{
@@ -86,7 +89,7 @@
 
 .texto-show{
     background: #FFFFFF;
-    height: 40px;
+    height: auto;
     border: solid 0.5pt #0b6bd3;
     border-radius: 10px;
     padding-left: 10px;
@@ -193,6 +196,10 @@
 
 .nome{
     width: 48%;
+}
+
+.nome-gr{
+    width: 98%;
 }
 
 @media screen and (max-width: 700px){

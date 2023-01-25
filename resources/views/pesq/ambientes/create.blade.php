@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="h4 font-weight-bold">
-            {{ __('Gerenciamento de Prédios') }}
+            {{ __('Gerenciamento das Unidades da ALBA') }}
         </h2>
     </x-slot>
     <div class="col-md-12">
@@ -12,11 +12,11 @@
                     <div class="col-md-12">
                         <div class="w-auto p-3">
                             <div class="panel-heading-admin">
-                                <h5>Novo Prédio</h5>
+                                <h5>Nova Unidade</h5>
                             </div>
                             <div class="panel-body">
                                 <div class="row btn-new-reset">
-                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.predios.index'))->addClass(['class' => 'btn-teste']) !!}
+                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.ambientes.index'))->addClass(['class' => 'btn-teste']) !!}
                                 </div>
                                 <div class="form-admin">
                                     <?php $icon = '<i class="fas fa-save"></i>'; ?>
@@ -34,5 +34,5 @@
             </div>
         </div>
     </div>
-
+    @include('pesq.ambientes.scriptes')
 </x-app-layout>

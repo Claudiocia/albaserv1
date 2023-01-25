@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="h4 font-weight-bold">
-            {{ __('Dados das Assembleias Legislativas do Brasil') }}
+            {{ __('Dados da Assembleias Legislativa da Bahia') }}
         </h2>
     </x-slot>
     <div class="col-md-12">
@@ -12,19 +12,19 @@
                     <div class="col-md-12">
                         <div class="w-auto p-3">
                             <div class="panel-heading-admin">
-                                <h5>Dados da -- {{$predio->nome}}</h5>
+                                <h5>Dados do Andar -- {{$andar->nome}} do Prédio {{$andar->ala->predio->nome}} @if($andar->ala->nome != 'Única') - Ala {{$andar->ala->nome}} @endif</h5>
                             </div>
                             <div class="panel-body">
                                 <div class="row btn-new-reset">
-                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.predios.index'))->addClass(['class' => 'btn-teste']) !!}
-                                    {!! Button::primary('Editar')->asLinkTo(route('pesq.predios.edit', ['predio' => $predio->id]))->addClass(['class' => 'btn-teste']) !!}
+                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.andars.index'))->addClass(['class' => 'btn-teste']) !!}
+                                    {!! Button::primary('Editar')->asLinkTo(route('pesq.andars.edit', ['andar' => $andar->id]))->addClass(['class' => 'btn-teste']) !!}
                                     {!! Button::danger('Delete')
-                                            ->asLinkTo(route('pesq.predios.destroy', ['predio' => $predio->id]))
+                                            ->asLinkTo(route('pesq.andars.destroy', ['andar' => $andar->id]))
                                             ->addAttributes(['data-bs-toggle' => 'modal', 'class' => 'btn-teste', 'data-bs-target' => '#deleteModal'])
                                  !!}
                                     <?php $formDelete = FormBuilder::plain([
                                         'id' => 'form-delete',
-                                        'route' => ['pesq.predios.destroy', 'predio' => $predio->id],
+                                        'route' => ['pesq.andars.destroy', 'andar' => $andar->id],
                                         'method' => 'DELETE',
                                         'style' => 'display:none',
                                     ]); ?>
@@ -54,13 +54,19 @@
                                             <div class="nome">
                                                 <h6 class="block font-medium text-sm text-gray-700 label-show">Sigla</h6>
                                                 <div class="texto-show">
-                                                    {{ $predio->alba->sigla }}
+                                                    {{ $andar->ala->predio->alba->sigla }}
                                                 </div>
                                             </div>
                                             <div class="nome">
-                                                <h6 class="block font-medium text-sm text-gray-700 label-show">Nome</h6>
+                                                <h6 class="block font-medium text-sm text-gray-700 label-show">Prédio</h6>
                                                 <div class="texto-show">
-                                                    {{ $predio->nome }}
+                                                    {{ $andar->ala->predio->nome }}
+                                                </div>
+                                            </div>
+                                            <div class="nome">
+                                                <h6 class="block font-medium text-sm text-gray-700 label-show">Andar / ALA</h6>
+                                                <div class="texto-show">
+                                                    @if($andar->ala->nome != 'Única') {{ $andar->nome }} -- {{ $andar->ala->nome }}@else {{ $andar->nome }} @endif
                                                 </div>
                                             </div>
                                         </div>

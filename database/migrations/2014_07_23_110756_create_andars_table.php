@@ -16,8 +16,10 @@ class CreateAndarsTable extends Migration
 	public function up()
 	{
 		Schema::create('andars', function(Blueprint $table) {
-            $table->increments('id');
-
+            $table->id();
+            $table->string('nome');
+            $table->bigInteger('ala_id')->unsigned();
+            $table->foreign('ala_id')->references('id')->on('alas');
             $table->timestamps();
 		});
 	}

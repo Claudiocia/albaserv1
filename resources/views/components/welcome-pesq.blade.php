@@ -1,35 +1,7 @@
 <div class="row justify-content-center my-5">
     <div class="col-md-12">
         <div class="card shadow bg-light">
-            <div class="card-body bg-blue px-5 py-3 border-bottom rounded-top">
-                <div class="mx-3 my-3">
-                    <h3 class="h3 my-4 font-branc">
-                        Bem vindo a Pesquisa
-                    </h3>
-                </div>
-                <!-- inserção do menu Pesquisa -->
-
-                <nav class="navbar navbar-expand-md navbar-light bg-blue border-bottom sticky-top">
-                    <div class="container">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <!-- Left Side Of Navbar -->
-                            <ul class="navbar-nav me-auto">
-                                <x-jet-nav-link href="{{ route('pesq.dashboard-pesq') }}" :active="request()->routeIs('pesq.dashboard-pesq')" class="font-branc">
-                                    {{ __('Home Pesquisa') }}
-                                </x-jet-nav-link>
-                                <x-jet-nav-link href="{{ route('pesq.albas.index') }}" :active="request()->routeIs('pesq.albas.index')" class="font-branc">
-                                    {{ __('Assembleias') }}
-                                </x-jet-nav-link>
-                                <x-jet-nav-link href="#" :active="request()->routeIs('#')" class="font-branc">
-                                    {{ __('Outro') }}
-                                </x-jet-nav-link>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-
-                <!-- FIM do menu Pesquisa -->
-            </div>
+            @include('layouts.menu-pesq')
             <div class="row g-0">
                 <div class="col-md-6 pe-0">
                     <div class="card-body border-right border-bottom p-3 h-100">

@@ -4,8 +4,9 @@
             {{ __('Edição de Assembleia') }}
         </h2>
     </x-slot>
-    <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-        <div id="admin-content">
+    <div class="col-md-12">
+        <div class="card shadow bg-light">
+            @include('layouts.menu-pesq')
             <div class="container-admin">
                 <div class="row">
                     <div class="col-md-12">
@@ -15,7 +16,7 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row btn-new-reset">
-                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.albas.index')) !!}
+                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.albas.index'))->addClass(['class' => 'btn-teste']) !!}
                                 </div>
                                 <div class="form-admin">
                                     <?php $icon = '<i class="fas fa-save"></i>'; ?>

@@ -4,8 +4,9 @@
             {{ __('Dados das Assembleias Legislativas do Brasil') }}
         </h2>
     </x-slot>
-    <div class="p-6 sm:px-20 bg-white border-b border-gray-200">
-        <div id="admin-content">
+    <div class="col-md-12">
+        <div class="card shadow bg-light">
+            @include('layouts.menu-pesq')
             <div class="container-admin">
                 <div class="row">
                     <div class="col-md-12">
@@ -15,11 +16,11 @@
                             </div>
                             <div class="panel-body">
                                 <div class="row btn-new-reset">
-                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.albas.index')) !!}
+                                    {!! Button::primary('Voltar')->asLinkTo(route('pesq.albas.index'))->addClass(['class' => 'btn-teste']) !!}
                                     {!! Button::primary('Editar')->asLinkTo(route('pesq.albas.edit', ['alba' => $alba->id]))->addClass(['class' => 'btn-teste']) !!}
                                     {!! Button::danger('Delete')
                                             ->asLinkTo(route('pesq.albas.destroy', ['alba' => $alba->id]))
-                                            ->addAttributes(['onclick' => 'event.preventDefault();document.getElementById("form-delete").submit();', 'class' => 'btn-teste'])
+                                            ->addAttributes(['data-bs-toggle' => 'modal', 'class' => 'btn-teste', 'data-bs-target' => '#deleteModal'])
                                  !!}
                                     <?php $formDelete = FormBuilder::plain([
                                         'id' => 'form-delete',
@@ -28,6 +29,24 @@
                                         'style' => 'display:none',
                                     ]); ?>
                                     {!! form($formDelete) !!}
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel"><span class="aviso">Confirme sua ação</span></h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <span class="aviso">Você tem certeza que deseja deletar o registro?</span>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                    <button type="button" class="btn btn-danger" onclick="event.preventDefault();document.getElementById('form-delete').submit();">Deletar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row" style="margin-left: 10px; margin-right: 10px;">
                                     <div id="register-show">
